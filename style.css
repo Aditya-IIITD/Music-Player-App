@@ -1,0 +1,245 @@
+body {
+  background-color: beige;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0;
+}
+
+.darkgray {
+  background-color: gray !important;
+}
+header {
+  text-align: center;
+  position: relative;
+  background-color: darkcyan;
+  height: 90px;
+}
+
+header > h1 {
+  margin: 0;
+}
+
+#togglebtn {
+  position: absolute;
+  left: 92%;
+}
+
+main {
+  width: 90%;
+  height: auto;
+  /* background-color: gray; */
+  margin: 70px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#Searchinputs {
+  margin-top: 15px;
+  /* border: 0.5px  solid black; */
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+#Searchinputs input {
+  /* width: 22%; */
+  font-size: 11px;
+  font-weight: bold;
+  height: 21px;
+  border-radius: 6px 0 0 6px;
+  padding: 5px;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+.music {
+  height: 600px;
+  width: 29%;
+  background-color: darkcyan;
+  box-sizing: border-box;
+  padding: 2%;
+  color: white;
+}
+
+#left {
+  border-radius: 20px 0 0 20px;
+}
+
+#allsongsHeader {
+  /* border: 0.5px solid black; */
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#allsongsHeader > i:hover {
+  transform: scale(0.9);
+  color: bisque;
+}
+
+#allsongsDiv {
+  height: 200px;
+  /* border: 0.5px solid white; */
+}
+.songs {
+  /* border: 0.5px solid yellow; */
+  text-align: center;
+}
+
+.item {
+  margin-top: 15px;
+  height: 28px;
+  width: 60%;
+  border-radius: 5px 5px 5px 5px;
+  background-color: darkred;
+  font-size: 1.2vw;
+  cursor: pointer;
+}
+#songname {
+  font-size: 1.5vw;
+  font-weight: 600;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 5px;
+}
+.setMargin {
+  margin: 0 auto;
+  margin-top: 15px;
+}
+.item:hover {
+  box-shadow: 0px 5px 0px 2px darkgoldenrod;
+}
+.filter {
+  width: 59%;
+  margin: 0 auto;
+  color: white;
+  /* border: 1px solid wheat; */
+}
+
+select {
+  outline: none;
+  border-radius: 5px;
+  background-color: darkslategrey;
+  color: white;
+}
+
+/* //////////////player /////////////////////// */
+.lgtblue {
+  background-color: lightblue;
+}
+.lgtwhite {
+  background-color: white;
+}
+.player {
+  width: 37%;
+  height: 600px;
+  /* box-shadow: 10px 0 20px -5px darkcyan, -10px 0 20px -5px brown; */
+  padding: 2%;
+  box-sizing: border-box;
+}
+
+#songImgDiv {
+  height: 300px;
+  width: 100%;
+  background-color: skyblue;
+  border-radius: 10px 10px 10px 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btnColor {
+  background-color: darkgreen;
+}
+#songImgDiv > img {
+  height: auto;
+  width: auto;
+}
+
+#timeline {
+  width: 100%;
+  height: 60px;
+  margin-top: 30px;
+  /* border: 0.5px solid black; */
+  text-align: center;
+}
+
+#nextPrevBtns {
+  margin: 20px auto;
+  height: 100px;
+  width: 80%;
+  /* background-color: gray; */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+#nextPrevBtns > div {
+  height: 30%;
+  width: 40%;
+  background-color: purple;
+  color: white;
+  font-weight: 500;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#nextPrevBtns > div:hover {
+  box-shadow: 0px 5px 0px 2px orchid;
+  cursor: pointer;
+}
+
+/* ////////////////////playlist////////////////////// */
+#currPlaylist {
+  text-align: center;
+  color: black;
+  background-color: rebeccapurple;
+}
+
+#currPlaylistSongs > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#currPlaylistSongs button {
+  height: 20px;
+  font-size: 10px;
+  font-weight: bold;
+  background-color: lavender;
+}
+
+#currPlaylistSongs button:hover {
+  background-color: skyblue;
+}
+
+#playlist {
+  border-radius: 0 20px 20px 0;
+}
+#playlist > input {
+  height: 25px;
+  outline: none;
+  /* border: none; */
+  border-radius: 6px 0 0 6px;
+  background-color: lightblue;
+  box-sizing: border-box;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 13px;
+}
+#playlist > button {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 25px;
+  font-size: 0.85vw;
+  border-radius: 0 5px 5px 0;
+  background-color: darkslategrey;
+  color: white;
+}
+.myplaylist {
+  margin-top: 20px;
+  /* border: 1px solid white; */
+  height: auto;
+  color: white;
+}

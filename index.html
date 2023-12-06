@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Music Player</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/53696b77df.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div id="togglebtn">
+        <input type="checkbox" id="checkbox" />
+        <label for="checkbox">Dark Mode</label>
+      </div>
+      <h1>Music Player</h1>
+
+      <div id="Searchinputs">
+        <div>
+          <input id="songSearch" type="text" placeholder="Search Song..." />
+          <button id="songSearchBtn" type="button">Search</button>
+        </div>
+        <div>
+          <input
+            id="playlistSearch"
+            type="text"
+            placeholder="Search Playlist..."
+          />
+          <button id="playlistSearchBtn" type="button">Search</button>
+        </div>
+      </div>
+      <!-- <hr /> -->
+    </header>
+    <main>
+      <div id="left" class="music">
+        <div class="filter">
+          <span>Filter by Genre</span>
+          <select>
+            <option>All</option>
+            <option>Punjabi</option>
+            <option>Hindi</option>
+            <option>Lofi</option>
+            <option>English</option>
+          </select>
+        </div>
+        <div id="allsongsDiv" class="myplaylist">
+          <div id="allsongsHeader">
+            <h2>All Songs</h2>
+            <i id="allsongsRefresh" class="fa-solid fa-rotate-right"></i>
+          </div>
+          <div id="allsongs" class="songs">
+            <!-- <p class="item setMargin">mulaqat</p> -->
+          </div>
+        </div>
+      </div>
+
+      <div id="player" class="player lgtwhite">
+        <div id="songname"></div>
+        <div id="songImgDiv">
+          <img src="" />
+        </div>
+        <div id="timeline">
+          <audio controls>
+            <source src="" type="audio/mp3" id="audiosrc" />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <div id="nextPrevBtns">
+          <div id="previous">
+            <i
+              class="fa-solid fa-angles-right fa-rotate-180"
+              style="color: #ffffff"
+            ></i>
+          </div>
+          <div id="next">
+            <i class="fa-solid fa-angles-right" style="color: #ffffff"></i>
+          </div>
+          <div id="addToplaylist">Add to playlist</div>
+        </div>
+      </div>
+
+      <div id="playlist" class="music">
+        <input
+          id="playlistInput"
+          type="text"
+          placeholder="Enter playlist name"
+        />
+        <button type="button" id="createplaylist">Create Playlist</button>
+        <div id="currentplaylist" class="myplaylist">
+          <h2>Current Playlist</h2>
+          <h4 id="currPlaylist"></h4>
+          <div id="currPlaylistSongs" class="songs">
+            <!-- <div>
+              <p class="item">mulaqat</p>
+              <button>Remove</button>
+            </div> -->
+          </div>
+        </div>
+        <div id="AllplaylistDiv" class="myplaylist">
+          <div id="allsongsHeader">
+            <h2>All Playlists</h2>
+            <i id="allplaylistsRefresh" class="fa-solid fa-rotate-right"></i>
+          </div>
+          <div id="Allplaylist" class="songs">
+            <!-- <p class="item">mulaqat</p> -->
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="music.js"></script>
+  </body>
+</html>
